@@ -33,7 +33,7 @@ std::string infixToPostfix(const std::string inf) {
             postf += std::to_string(operand) + " ";
         } else if (isalpha(c)) {
             postf += c;
-            postf += ' ';
+            postf += " ";
         } else if (c == '(') {
             stack1.push(c);
         } else if (c == ')') {
