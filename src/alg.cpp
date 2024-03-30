@@ -30,7 +30,7 @@ std::string infx2pstfx(const std::string inf) {
                 i++;
             }
             i--;
-            postf += std::to_string(operand) + " ";
+            postf += std::to_string(operand) + ' ';
         } else if (isalpha(c)) {
             postf += c;
             postf += " ";
