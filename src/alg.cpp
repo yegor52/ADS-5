@@ -10,7 +10,7 @@ bool isOperator(char c) {
 int isPriority(char operation) {
     if (operation == '*' || operation == '/') {
         return 2;
-    } else if (operation == '+' || operation == '-'){
+    } else if (operation == '+' || operation == '-') {
         return 1;
     } else {
         return 0;
@@ -63,7 +63,7 @@ std::string infixToPostfix(const std::string inf) {
 int eval(const std::string pref) {
     TStack<int, 100> stack2;
 
-    for (int i = 0; i < pref.size(); i++){
+    for (int i = 0; i < pref.size(); i++) {
         if (isdigit(pref[i])) {
             int operand = 0;
             while (i < pref.size() && isdigit(pref[i])) {
