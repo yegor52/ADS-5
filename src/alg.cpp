@@ -17,7 +17,7 @@ int isPriority(char operation) {
     }
 }
 
-std::string infixToPostfix(const std::string inf) {
+std::string infx2pstfx(const std::string inf) {
     std::string postf = "";
     TStack<char, 100> stack1;
 
