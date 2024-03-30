@@ -45,7 +45,8 @@ std::string infixToPostfix(const std::string inf) {
                 stack1.pop();
             }
         } else if (isOperator(c)) {
-            while (!stack1.isEmpty() && isPriority(stack1.watch()) >= isPriority(c)) {
+            while (!stack1.isEmpty() &&
+                   isPriority(stack1.watch()) >= isPriority(c)) {
                 postf += stack1.pop();
                 postf += ' ';
             }
